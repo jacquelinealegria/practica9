@@ -1,0 +1,41 @@
+body {
+  background-color: hsl(0, 70%, 64%);
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: hsl(210, 86%, 63%);
+  color: #3307f7;
+  padding: 20px;
+}
+
+nav ul.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul.nav li.nav-item {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul.nav li.nav-item a.nav-link {
+  color: hwb(0 3% 96%);
+  text-decoration: none;
+}
+
+article {
+  padding: 20px;
+}
+
+.table {
+  background-color: hsl(0, 96%, 82%);
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #343a40;
+  color: hsl(32, 94%, 48%);
+  text-align: center;
+  padding: 20px;
+}

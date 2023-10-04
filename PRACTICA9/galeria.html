@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Galería - Mi Sitio Web</title>
+    <style>
+        body {
+            background-color: #42a7e5;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #343a40;
+            color: hsl(172, 63%, 56%);
+            padding: 20px;
+        }
+
+        nav ul.nav {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul.nav li.nav-item {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul.nav li.nav-item a.nav-link {
+            color: hsl(0, 75%, 69%);
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="galeria.html">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Galería de Imágenes</h1>
+        <div class="gallery">
+            <img src="data:image/jpeg;base64,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" alt="Imagen 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpEkb691r2v170zsH5as_IdcBWLztHAdr5sLV5ZPTZGvhPNXZs9duCVnAXGNQbxfia_D0&usqp=CAU" alt="Imagen 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRd42XA9WxlzpSLKMbrxSYeCRlS1-866qIIA&usqp=CAU" alt="Imagen 3">
+            <!-- Agrega más imágenes aquí -->
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Mi Sitio Web. Todos los derechos reservados.</p>
+            <p>UBICACIÓN: Tuxtla Gutiérrez, Chiapas</p>
+            <p>CONTACTO: <a href="jacqueline.alegria84@unach.mx">jacqueline.alegria84@unach.mx</a></p>
+        </div>
+    </footer>
+</body>
+</html>
